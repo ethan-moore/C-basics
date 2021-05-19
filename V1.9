@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/**
+ * hello.c
+ */
+
+
+int main(){
+
+    int secertNumber = 5;
+    int guess;
+    int guessCount = 0; 
+    int guessLimit = 3;
+    int outofGuesses = 0;
+
+    while (guess != secertNumber && outofGuesses == 0){
+
+        if(guessCount < guessLimit){
+
+           printf("enter a number: ");
+           scanf("%d", &guess);
+           guessCount++;
+        } else {
+            outofGuesses == 1;
+        }
+    }
+    if( outofGuesses == 1){
+        printf("out of guesses");
+    } else {
+        printf ("You Win!");
+    }
+    
+    
+
+
+
+	return 0;
+}

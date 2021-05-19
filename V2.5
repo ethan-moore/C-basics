@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/**
+ * hello.c
+ */
+
+
+int main(){
+
+   FILE * fpointer = fopen ("employees.txt", "w"); /*  w stands for write you can 
+   also use "a" to append and add lines to the end of a file */
+
+   fprintf(fpointer, "Jim, Salesman\n Pam Receptionist\nOscar Treasurer");
+   
+   fclose(fpointer);
+   
+   
+   
+   return 0;
+}

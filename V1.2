@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/**
+ * hello.c
+ */
+int main(void)
+{
+    sayHi("Mike", 40);
+    sayHi("Tom", 25);
+    sayHi("Oscar", 35);
+
+	return 0;
+}
+
+void sayHi(char name[], int age){
+    printf("Hello %s, you are %d\n", name, age);
+}

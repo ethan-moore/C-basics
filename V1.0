@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/**
+ * hello.c
+ */
+int main(void)
+{
+    char color[20];
+    char pluralNoun[20];
+    char celebritiyF[20];
+    char celebritiyL[20];
+
+    printf("enter a color: ");
+    scanf("%s", color);
+    printf("enter a plural noun: ");
+    scanf("%s", pluralNoun);
+    printf("enter a celebrity name: ");
+    scanf("%s%s", celebritiyF, celebritiyL);
+
+
+    printf("roses are %s\n", color);
+    printf("%s are blue\n", pluralNoun);
+    printf("I love %s%s\n", celebritiyF, celebritiyL);
+
+
+
+
+
+	return 0;
+}
